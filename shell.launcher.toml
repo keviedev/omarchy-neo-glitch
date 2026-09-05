@@ -1,0 +1,15 @@
+# Neo Glitch launcher - black ICE command deck
+
+[launcher]
+background                = "#07040c"
+background-alpha          = 0.96
+text                      = "#d8f0ff"
+border                    = "rgba(0,255,159,0.85) rgba(234,0,217,0.85) 90deg"
+border-alpha              = 1.0
+scrim                     = "#040208"
+scrim-alpha               = 0.7
+selected-background       = "#ea00d9"
+selected-background-alpha = 0.18
+selected-text             = "#00ff9f"
+selected-border           = "rgba(0,255,159,0.85) rgba(234,0,217,0.85) 90deg"
+selected-border-alpha     = 0.6

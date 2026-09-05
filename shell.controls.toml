@@ -1,0 +1,29 @@
+# Neo Glitch controls - hot magenta interactive chrome
+
+[controls]
+normal-color        = "#00ff9f"
+normal-fill-alpha   = 0.05
+normal-border       = "#00ff9f"
+normal-border-width = 1
+normal-border-alpha = 0.5
+
+hover-cursor-color        = "#00e5ff"
+hover-cursor-fill-alpha   = 0.12
+hover-cursor-border       = "#00e5ff"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.35
+
+focus-color        = "#00e5ff"
+focus-fill-alpha   = 0.12
+focus-border       = "#00e5ff"
+focus-border-width = 1
+focus-border-alpha = 0.35
+
+selected-color        = "#ea00d9"
+selected-fill-alpha   = 0.22
+selected-border       = "#ea00d9"
+selected-border-width = 0
+selected-border-alpha = 1.0
+
+pressed-fill-alpha   = 0.28
+selection-fill-alpha = 0.4

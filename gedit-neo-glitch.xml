@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<style-scheme id="neo-glitch" _name="Neo Glitch" kind="dark">
+  <_description>Cyberpunk RGB-split neon on void black. Matches the Omarchy neo-glitch theme.</_description>
+
+  <!-- Palette -->
+  <color name="void"                        value="#0a0612"/>
+  <color name="dark_void"                   value="#07040c"/>
+  <color name="panel"                       value="#1c0f2e"/>
+  <color name="selection"                   value="#2a1040"/>
+  <color name="muted"                       value="#5d4a7a"/>
+  <color name="fg"                          value="#d8f0ff"/>
+  <color name="bright_fg"                   value="#f4faff"/>
+  <color name="neon_green"                  value="#00ff9f"/>
+  <color name="neon_cyan"                   value="#00e5ff"/>
+  <color name="neon_magenta"                value="#ea00d9"/>
+  <color name="neon_red"                    value="#ff2a6d"/>
+  <color name="neon_yellow"                 value="#f9f871"/>
+  <color name="neon_orange"                 value="#ff9e4f"/>
+  <color name="teal"                        value="#0abdc6"/>
+
+  <!-- Global Settings -->
+  <style name="text"                        foreground="fg" background="void"/>
+  <style name="selection"                   foreground="bright_fg" background="neon_magenta"/>
+  <style name="cursor"                      foreground="neon_red"/>
+  <style name="current-line"                background="panel"/>
+  <style name="line-numbers"                foreground="muted" background="dark_void"/>
+  <style name="draw-spaces"                 foreground="muted"/>
+  <style name="right-margin"                foreground="muted" background="muted"/>
+  <style name="background-pattern"          background="panel"/>
+
+  <!-- Bracket Matching -->
+  <style name="bracket-match"               background="selection" bold="true"/>
+  <style name="bracket-mismatch"            background="neon_red" bold="true"/>
+
+  <!-- Search Matching -->
+  <style name="search-match"                foreground="void" background="neon_yellow"/>
+
+  <!-- Comments -->
+  <style name="def:comment"                 foreground="muted" italic="true"/>
+  <style name="def:shebang"                 foreground="muted" italic="true"/>
+  <style name="def:doc-comment-element"     foreground="muted" bold="true"/>
+  <style name="def:doc-comment-body"        foreground="muted"/>
+
+  <!-- Constants and Variables -->
+  <style name="def:constant"                foreground="neon_yellow"/>
+  <style name="def:string"                  foreground="neon_green"/>
+  <style name="def:special-char"            foreground="neon_orange"/>
+  <style name="def:special-constant"        foreground="neon_magenta" bold="true"/>
+  <style name="def:number"                  foreground="neon_red"/>
+  <style name="def:floating-point"          foreground="neon_red"/>
+  <style name="def:boolean"                 foreground="neon_magenta" bold="true"/>
+  <style name="def:keyword"                 foreground="neon_magenta" bold="true"/>
+  <style name="def:builtin"                 foreground="neon_cyan" bold="true"/>
+  <style name="def:variable"                foreground="fg"/>
+
+  <!-- Identifiers -->
+  <style name="def:identifier"              foreground="fg"/>
+  <style name="def:function"                foreground="neon_cyan"/>
+
+  <!-- Statements -->
+  <style name="def:statement"               foreground="neon_magenta"/>
+
+  <!-- Types -->
+  <style name="def:type"                    foreground="neon_yellow"/>
+  <style name="def:class"                   foreground="neon_yellow"/>
+  <style name="def:interface"               foreground="neon_yellow"/>
+  <style name="def:struct"                  foreground="neon_yellow"/>
+  <style name="def:enum"                    foreground="neon_yellow"/>
+
+  <!-- Markup -->
+  <style name="def:emphasis"                italic="true"/>
+  <style name="def:strong-emphasis"         bold="true"/>
+  <style name="def:inline-code"             foreground="neon_green"/>
+  <style name="def:insertion"               underline="single"/>
+  <style name="def:deletion"                strikethrough="true"/>
+  <style name="def:link-text"               foreground="neon_cyan" italic="true"/>
+  <style name="def:link-symbol"             foreground="neon_cyan" italic="true"/>
+  <style name="def:link-destination"        underline="single"/>
+  <style name="def:heading"                 foreground="neon_magenta" bold="true"/>
+  <style name="def:thematic-break"          foreground="muted"/>
+  <style name="def:preformatted-section"    foreground="neon_green"/>
+  <style name="def:list-marker"             foreground="neon_orange"/>
+
+  <!-- Others -->
+  <style name="def:error"                   foreground="bright_fg" background="neon_red" bold="true"/>
+  <style name="def:warning"                 foreground="void" background="neon_yellow"/>
+  <style name="def:note"                    foreground="neon_cyan" bold="true"/>
+  <style name="def:net-address"             foreground="teal" underline="single"/>
+  <style name="def:preprocessor"            foreground="neon_orange"/>
+  <style name="def:underlined"              underline="single"/>
+
+  <!-- Heading styles, uncomment to enable -->
+  <!--
+  <style name="def:heading0"                scale="5.0"/>
+  <style name="def:heading1"                scale="2.5"/>
+  <style name="def:heading2"                scale="2.0"/>
+  <style name="def:heading3"                scale="1.7"/>
+  <style name="def:heading4"                scale="1.5"/>
+  <style name="def:heading5"                scale="1.3"/>
+  <style name="def:heading6"                scale="1.2"/>
+  -->
+
+  <!-- C Styles -->
+  <style name="c:preprocessor"              foreground="neon_orange" bold="true"/>
+  <style name="c:included-file"             foreground="neon_green"/>
+  <style name="c:common-defines"            foreground="neon_cyan" bold="true"/>
+
+  <!-- Diff Styles -->
+  <style name="diff:ignore"                 foreground="muted"/>
+  <style name="diff:added-line"             foreground="neon_green"/>
+  <style name="diff:removed-line"           foreground="neon_red"/>
+  <style name="diff:changed-line"           foreground="neon_orange"/>
+  <style name="diff:diff-file"              foreground="neon_cyan" bold="true"/>
+  <style name="diff:location"               foreground="neon_cyan"/>
+  <style name="diff:special-case"           foreground="neon_magenta" bold="true"/>
+
+  <!-- Ruby Styles -->
+  <style name="ruby:module-handler"         foreground="neon_yellow"/>
+  <style name="ruby:symbol"                 foreground="neon_red"/>
+  <style name="ruby:regex"                  foreground="teal"/>
+
+  <!-- SH Styles -->
+  <style name="sh:function"                 foreground="neon_cyan"/>
+  <style name="sh:heredoc"                  foreground="neon_green"/>
+  <style name="sh:variable"                 foreground="fg"/>
+  <style name="sh:variable-common"          foreground="fg"/>
+
+  <!-- XML Styles -->
+  <style name="xml:attribute-name"          foreground="fg"/>
+  <style name="xml:element-name"            foreground="neon_yellow"/>
+  <style name="xml:entity"                  foreground="neon_red"/>
+  <style name="xml:processing-instruction"  foreground="neon_orange" bold="true"/>
+
+  <!-- JSON Styles -->
+  <style name="json:boolean"                foreground="neon_magenta"/>
+  <style name="json:decimal"                foreground="neon_red"/>
+  <style name="json:exp"                    foreground="neon_red"/>
+  <style name="json:float"                  foreground="neon_red"/>
+  <style name="json:keyword"                foreground="neon_magenta" bold="true"/>
+  <style name="json:null-value"             foreground="neon_magenta"/>
+  <style name="json:special-char"           foreground="neon_orange"/>
+
+  <!-- Python Styles -->
+  <style name="python:boolean"              foreground="neon_magenta"/>
+  <style name="python:builtin-object"       foreground="neon_yellow"/>
+  <style name="python:builtin-function"     foreground="neon_cyan"/>
+  <style name="python:decorator"            foreground="neon_orange"/>
+  <style name="python:exception"            foreground="neon_red"/>
+  <style name="python:function-name"        foreground="neon_cyan"/>
+  <style name="python:module-handler"       foreground="neon_cyan"/>
+  <style name="python:numeric-literal"      foreground="neon_red"/>
+  <style name="python:special-variable"     foreground="fg"/>
+  <style name="python:verbatim-string"      foreground="neon_green"/>
+
+  <!-- Rust Styles -->
+  <style name="rust:attribute"              foreground="neon_orange"/>
+  <style name="rust:closure"                foreground="fg"/>
+  <style name="rust:definition"             foreground="neon_cyan"/>
+  <style name="rust:enum"                   foreground="neon_yellow"/>
+  <style name="rust:escape"                 foreground="neon_orange"/>
+  <style name="rust:keyword"                foreground="neon_magenta" bold="true"/>
+  <style name="rust:lifetime"               foreground="teal" italic="true"/>
+  <style name="rust:macro"                  foreground="neon_green"/>
+  <style name="rust:scope"                  foreground="muted"/>
+  <style name="rust:struct"                 foreground="neon_yellow"/>
+  <style name="rust:type"                   foreground="neon_yellow"/>
+  <style name="rust:unsafe-code"            foreground="neon_red"/>
+  <style name="rust:variable"               foreground="fg"/>
+
+  <!-- JS/TS-ish extras -->
+  <style name="js:keyword"                  foreground="neon_magenta" bold="true"/>
+  <style name="js:built-in-constructor"     foreground="neon_cyan"/>
+  <style name="js:constructors"             foreground="neon_cyan"/>
+</style-scheme>

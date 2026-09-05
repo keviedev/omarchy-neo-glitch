@@ -1,0 +1,14 @@
+# Neo Glitch lock input - ICE password field
+
+[lock]
+background       = "#07040c"
+background-alpha = 0.8
+text             = "#00ff9f"
+placeholder      = "#5d4a7a"
+text-error       = "#ff2a6d"
+border           = "rgba(0,255,159,0.85) rgba(234,0,217,0.85) 90deg"
+border-active    = "rgba(0,229,255,0.9) rgba(234,0,217,0.9) 90deg"
+border-error     = "#ff2a6d"
+border-alpha     = 1.0
+selection        = "#ea00d9"
+selection-alpha  = 0.45

@@ -1,0 +1,10 @@
+# Neo Glitch bar - neon scanline strip
+
+[bar]
+background       = "#07040c"
+background-alpha = 0.92
+text             = "#d8f0ff"
+active           = "#ff2a6d"
+scale-with-font  = true
+size-horizontal  = 28
+size-vertical    = 30
