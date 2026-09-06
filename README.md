@@ -51,6 +51,15 @@ omarchy theme set neo-glitch
   (magenta hardware / cyan software / red system headers). Copy
   `fastfetch/config.jsonc` to `~/.config/fastfetch/config.jsonc` and
   `fastfetch/skull.txt` to `~/.config/fastfetch/neo-glitch/`.
+- **branding/** — neo-glitch Omarchy branding graphics: `about.txt` (block-art
+  skull + NEO GLITCH wordmark, shown in the About window) and `screensaver.txt`
+  (the OMARCHY wordmark recolored green → cyan → magenta for the ttfx
+  screensaver). Installed to `~/.config/omarchy/branding/` by the theme-set
+  hook.
+- **sddm/** — a Neo Glitch fork of the Omarchy SDDM login theme (void-black
+  background, neon OMARCHY logo). Install with
+  `sudo bash sddm/install.sh` — copies the theme to
+  `/usr/share/sddm/themes/neo-glitch` and switches SDDM to it.
 
 ## Starship prompt
 
