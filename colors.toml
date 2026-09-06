@@ -4,6 +4,10 @@ accent = "#00ff9f"
 selection = "#2a1040"
 muted = "#5d4a7a"
 
+cursor = "#ff2a6d"
+selection_foreground = "#f4faff"
+selection_background = "#ea00d9"
+
 background = "#0a0612"
 dark_background = "#07040c"
 darker_background = "#040208"

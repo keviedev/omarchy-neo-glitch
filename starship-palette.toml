@@ -1,0 +1,24 @@
+# Neo Glitch starship palette
+#
+# Drop this block into ~/.config/starship.toml (anywhere at top level),
+# then set:  palette = 'neo-glitch'
+#
+# RGB-split neon on void black. Matches the Omarchy neo-glitch theme:
+#   magenta #ea00d9 · red #ff2a6d · cyan #00e5ff · green #00ff9f ·
+#   yellow #f9f871 · void black #0a0612
+
+[palettes.neo-glitch]
+success_fg = '#00ff9f'
+error_fg = '#ff2a6d'
+fg_1 = '#f4faff'
+bg_1 = '#ea00d9'      # magenta - os/duration/time
+fg_2='#0a0612'
+bg_2='#ff2a6d'        # neon red - containers/aws
+fg_3 = '#0a0612'
+bg_3 = '#00e5ff'      # cyan - toolchains
+fg_4 = '#0a0612'
+bg_4 = '#00ff9f'      # neon green - git
+fg_5 = '#0a0612'
+bg_5 = '#f9f871'      # neon yellow - directory
+fg_6='#0a0612'
+bg_6='#7d4bff'        # purple - user/session

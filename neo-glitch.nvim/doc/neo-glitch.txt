@@ -1,0 +1,15 @@
+*neo-glitch.txt*    Cyberpunk RGB-split neon on void black
+
+                   NEO GLITCH - A CYBERPUNK COLORSCHEME FOR NEOVIM
+
+Matches the Omarchy neo-glitch theme (github.com/keviedev/omarchy-neo-glitch).
+
+Install: >
+    { dir = "~/path/to/omarchy-neo-glitch/neo-glitch.nvim" }
+    vim.cmd.colorscheme("neo-glitch")
+
+Palette: void black #0a0612 · neon green #00ff9f · cyan #00e5ff ·
+magenta #ea00d9 · red #ff2a6d · yellow #f9f871 · orange #ff9e4f ·
+purple selection #2a1040.
+
+ vim:tw=78:sw=4:ts=8:ft=help:norl:
