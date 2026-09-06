@@ -15,11 +15,14 @@ rm -rf "$DEST"
 cp -r "$SRC" "$DEST"
 
 CONF=/etc/sddm.conf.d/10-theme.conf
-cp "$CONF" "${CONF}.bak.$(date +%s)" 2>/dev/null || true
+# SDDM parses ALL files in conf.d (not just *.conf), sorted alphabetically,
+# so backups must live outside the directory or they override the real config.
+mkdir -p /var/backups/sddm
+cp "$CONF" "/var/backups/sddm/10-theme.conf.bak.$(date +%s)" 2>/dev/null || true
 cat > "$CONF" <<'EOF'
 [Theme]
 Current=neo-glitch
 EOF
 
 echo "Installed. Neo Glitch SDDM theme active on next logout/reboot."
-echo "Revert anytime with: sudo cp ${CONF}.bak.* $CONF"
+echo "Revert anytime with: sudo cp /var/backups/sddm/10-theme.conf.bak.* /etc/sddm.conf.d/10-theme.conf"
