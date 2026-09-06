@@ -31,9 +31,10 @@ omarchy theme set neo-glitch
 - **hyprlock.conf** — supplies the lock screen variable colors (black ICE
   input field, magenta frame, green text).
 - **hyprland.conf** — focused-window border gradient: green → magenta at 90°.
-- **shell.\*.toml** — Omarchy shell section overrides: translucent black bar,
-  hot magenta interactive controls, gradient-framed launcher/menus/popups/
-  notifications, neon lock input.
+- **shell.\*.toml** — Omarchy shell section overrides: translucent black bar
+  with magenta text and neon green active states, hot magenta interactive
+  controls, gradient-framed launcher/menus/popups/notifications, neon lock
+  input.
 - **keyboard.rgb / icons.theme** — neon green keyboard backlight (OpenRGB
   devices), Yaru-purple icons.
 - **gedit-neo-glitch.xml** — optional GtkSourceView scheme for gedit 50
@@ -43,7 +44,7 @@ omarchy theme set neo-glitch
 - **neo-glitch.nvim/** — a full matching Neovim colorscheme (void black,
   neon syntax, green cursor on purple CursorLine). Point your LazyVim at it:
   ```lua
-  { dir = "~/path/to/omarchy-neo-glitch/neo-glitch.nvim", lazy = false, priority = 1000 },
+  { dir = "~/.config/omarchy/themes/neo-glitch/neo-glitch.nvim", lazy = false, priority = 1000 },
   { "LazyVim/LazyVim", opts = { colorscheme = "neo-glitch" } },
   ```
 - **fastfetch/** — a matching fastfetch config: truecolor ASCII skull logo
@@ -51,15 +52,23 @@ omarchy theme set neo-glitch
   (magenta hardware / cyan software / red system headers). Copy
   `fastfetch/config.jsonc` to `~/.config/fastfetch/config.jsonc` and
   `fastfetch/skull.txt` to `~/.config/fastfetch/neo-glitch/`.
-- **branding/** — neo-glitch Omarchy branding graphics: `about.txt` (block-art
-  skull + NEO GLITCH wordmark, shown in the About window) and `screensaver.txt`
-  (the OMARCHY wordmark recolored green → cyan → magenta for the ttfx
-  screensaver). Installed to `~/.config/omarchy/branding/` by the theme-set
+- **tmux/** — a full Neo Glitch tmux status line: neon green session badge
+  and active window, cyan host / yellow clock / magenta date chips on the
+  right, purple pane borders with green active border. Copy
+  `tmux/tmux.conf` to `~/.config/tmux/tmux.conf` (or merge the theme block
+  into your own config).
+- **branding/** — neo-glitch Omarchy branding graphics: `about.txt` (the
+  original Omarchy icon art recolored neon green, shown in the About
+  window), `screensaver.txt` (the OMARCHY wordmark recolored in a
+  green → cyan → magenta gradient for the ttfx screensaver), and
+  `avatar-1024.png` (a matching GitHub profile avatar generated from the
+  skull art). Installed to `~/.config/omarchy/branding/` by the theme-set
   hook.
 - **sddm/** — a Neo Glitch fork of the Omarchy SDDM login theme (void-black
   background, neon OMARCHY logo). Install with
   `sudo bash sddm/install.sh` — copies the theme to
-  `/usr/share/sddm/themes/neo-glitch` and switches SDDM to it.
+  `/usr/share/sddm/themes/neo-glitch` and switches SDDM to it. The logo is
+  the stock Omarchy logo recolored with a green → cyan → magenta gradient.
 
 ## Starship prompt
 
