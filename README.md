@@ -17,11 +17,13 @@ omarchy theme set neo-glitch
 - **colors.toml** — the palette. Void black (`#0a0612`) base with neon green
   (`#00ff9f`), cyan (`#00e5ff`), magenta (`#ea00d9`), red (`#ff2a6d`), and
   yellow (`#f9f871`). Everything below derives from it where Omarchy allows.
-- **backgrounds/** — four procedurally generated synthwave glitch cities
+- **backgrounds/** — five procedurally generated synthwave glitch cities
   (2560x1440): segmented neon sun, perspective grid, digital rain, RGB
   channel-split shearing, CRT scanlines — plus a dead-face (😵) variant
-  where the sun is a neon-green double-X smiley with a magenta ghost copy.
-  Generated with PIL, no AI, no scraping. `omarchy theme bg next` cycles them.
+  where the sun is a neon-green double-X smiley with a magenta ghost copy,
+  and a modified variant with the eyebrows erased and a tongue sticking
+  out. Generated with PIL, no AI, no scraping. `omarchy theme bg next`
+  cycles them.
 - **ghostty.conf** — reference terminal palette (magenta selection, red
   cursor). Repo-installed themes get this regenerated from `colors.toml`
   (see Notes).
@@ -45,6 +47,11 @@ omarchy theme set neo-glitch
   { dir = "~/path/to/omarchy-neo-glitch/neo-glitch.nvim", lazy = false, priority = 1000 },
   { "LazyVim/LazyVim", opts = { colorscheme = "neo-glitch" } },
   ```
+- **fastfetch/** — a matching fastfetch config: truecolor dead-face (😵)
+  ASCII logo rendered from Noto Color Emoji, neon RGB key colors
+  (magenta hardware / cyan software / red system headers). Copy
+  `fastfetch/config.jsonc` to `~/.config/fastfetch/config.jsonc` and
+  `fastfetch/dead-face.txt` to `~/.config/fastfetch/neo-glitch/`.
 
 ## Starship prompt
 
