@@ -3,8 +3,8 @@
 [bar]
 background       = "#07040c"
 background-alpha = 0.92
-text             = "#00ff9f"
-active           = "#ea00d9"
+text             = "#ea00d9"
+active           = "#00ff9f"
 scale-with-font  = true
 size-horizontal  = 28
 size-vertical    = 30
